@@ -1,0 +1,12 @@
+{
+    "categories": [
+        {
+            "id": 0,
+            "name": "Workout Necessities"
+        },
+        {
+            "id": 1,
+            "name": "Work Necessities"
+        }
+    ]
+}
