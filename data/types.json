@@ -5,31 +5,31 @@
             "category": 0,
             "name": "Workout Clothes",
             "description": "Gotta be comfortable"
-        }
+        },
         {
             "id": 1,
             "category": 0,
             "name": "shoes",
             "description": "Make sure your feet are taken care of"
-        }
+        },
         {
             "id": 2,
             "category": 0,
             "name": "Equipment",
             "description": "The tools you need to succeed"
-        }
+        },
         {
             "id": 3,
             "category": 1,
             "name": "Dressy Clothes",
             "description": "Dress to impress"
-        }
+        },
         {
             "id": 4,
             "category": 1,
             "name": "Accessories",
             "description": "Everyone needs bling"
-        }
+        },
         {
             "id": 5,
             "category": 1,
