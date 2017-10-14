@@ -1,6 +1,6 @@
 {
     "products": [{
-        "apparel": {
+        "necessities": {
             "id": 0,
             "type": 0,
             "name": "Yoga Pants",
@@ -11,7 +11,7 @@
             "type": 0,
             "name": "Dri-fit shirt",
             "description": "The only way to workout is to have the sweat wick away."
-        },
+        }
         {
             "id": 2,
             "type": 0,
@@ -107,6 +107,7 @@
             "type": 5,
             "name": "Purse",
             "description": "Sometimes, a great purse is all you need to have a good day."
-        },
+        }
+        
     }]
 }

@@ -18,7 +18,7 @@ const categoriesJSON = () => {
 };
 
 const typesJSON = () => {
-	return new Promise((resolve, reject) => {
+	return new Promise(function(resolve, reject) {
 		$.ajax('./data/types.json').done((data2) => {
 			resolve(data2.types);
 		}).fail((error2) => {
@@ -28,7 +28,7 @@ const typesJSON = () => {
 };
 
 const productsJSON = () => {
-	return new Promise((resolve, reject) => {
+	return new Promise(function(resolve, reject) {
 		$.ajax('./data/products.json').done((data3) => {
 			resolve(data3.products);
 		}).fail((error3) => {
@@ -38,14 +38,28 @@ const productsJSON = () => {
 };
 
 const productGetter = () => {
-	Promise.all([categoriesJSON(), typesJSON(), productsJSON()]).then(function(results) {
-		console.log("results from all", results);
+	Promise.all([categoriesJSON(), typesJSON(), productsJSON]).then(function(results) {
+		console.log("results from promise.all", results);
+		results.forEach((result) => {
+			result.forEach((products) => {
+				AllProducts.push(products);
+				console.log("result", result);
+			});
+		});
+// 		// makeProducts();
+// 	});.catch((error) => {
+// 		console.log("error from Promise.all", error);
+// 	});
+// };
 
-	});
+
+const initializer = () => {
+	productGetter();
 };
 
-module.exports = {};
 
+
+module.exports = {initializer};
 
 
 
