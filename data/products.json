@@ -1,112 +1,115 @@
 {
     "products": [{
-        "apparel": {
+        "yoga_pants": {
             "id": 0,
             "type": 0,
             "name": "Yoga Pants",
             "description": "A must for yoga, running and beyond."
-        }
-        {
+        },
+
+        "Dri_fit": {     
             "id": 1,
             "type": 0,
             "name": "Dri-fit shirt",
             "description": "The only way to workout is to have the sweat wick away."
-        }
-        {
+        },
+
+        "Sports_Bra": {
             "id": 2,
             "type": 0,
             "name": "Sports Bra",
             "description": "Hold the girls in place."
-        }
-        {
+        },
+        "Running_Shoes": {
             "id": 3,
             "type": 1,
             "name": "Running shoes",
             "description": "A necessity to blaze a trail."
-        }
-        {
+        },
+        "Teva_Flipflops": {
             "id": 4,
             "type": 1,
             "name": "Teva Flipflops",
             "description": "Some people prefer their toes open free."
-        }
-        {
+        },
+        "Toes_Shoes": {
             "id": 5,
             "type": 1,
             "name": "Toes Shoes",
             "description": "Because sometimes, each toe needs its own home."
-        }
-        {
+        },
+        "Yoga_mat": {
             "id": 6,
             "type": 2,
             "name": "Yoga mat",
             "description": "Shavasana counts as working out"
-        }
-        {
+        },
+        "Watch": {
             "id": 7,
             "type": 2,
             "name": "watch",
             "description": "How fast can you run?"
-        }
-        {
+        },
+        "Sunglasses": {
             "id": 8,
             "type": 2,
             "name": "Sunglasses",
             "description": "Whether you're running or doing yoga outside, eyes need a shield"
-        }
-        {
+        },
+        "Dress": {
             "id": 9,
             "type": 3,
             "name": "Dress",
             "description": "Nothing better for the office on a sunny warm day. Pretend you're outside."
-        }
-        {
+        },
+        "Blazer": {
             "id": 10,
             "type": 3,
             "name": "Blazer",
             "description": "A great way to stay warm in the freezing office without wearing a coat."
-        }
-        {
+        },
+        "Pants": {
             "id": 11,
             "type": 3,
             "name": "Pants",
             "description": "Best choice when sleeping longer wins over shaving your legs."
-        }
-        {
+        },
+        "Scarf": {
             "id": 12,
             "type": 4,
             "name": "Scarf",
             "description": "The fastest way to dress up boring business colors"
-        }
-        {
+        },
+        "Earrings": {
             "id": 13,
             "type": 4,
             "name": "Earrings",
             "description": "People look at your face first, give them something to look at."
-        }
-        {
+        },
+        "Bracelet": {
             "id": 14,
             "type": 4,
             "name": "Bracelet",
             "description": "A great looking accessory that can sometimes annoyingly click on the keyboard."
-        }
-        {
+        },
+        "Wrist_Wallet": {
             "id": 15,
             "type": 5,
             "name": "Wrist Wallet",
             "description": "For the days when you just want to run to catch the train to work."
-        }
-		{
+        },
+		"Computer_bag": {
             "id": 16,
             "type": 5,
             "name": "Computer bag",
             "description": "If you have to haul it, might as well have a cute bag for it."
-        }
-        {
+        },
+        "Purse": {
             "id": 17,
             "type": 5,
             "name": "Purse",
             "description": "Sometimes, a great purse is all you need to have a good day."
         }
+        
     }]
 }
