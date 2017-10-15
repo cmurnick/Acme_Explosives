@@ -1,6 +1,7 @@
 "use strict";
 
 const dom = require('./dom');
+const events = require('./events');
 
 const products = [];
 const categories = [];
@@ -61,34 +62,38 @@ var productGetter = function() {
 	});
 		return productsJSON();
 
-	})
-	.then(function(results3) {
+	}).then(function(results3) {
 		results3.forEach(function(product){
-			products.push(results3);
+		});
+
+		products.push(results3);
 		console.log("products", results3);
 
 	});	
 		// makeProducts();
-});
 };
 
 
 
 
 
-const initializer = () => {
+const initializer = function() {
 	productGetter();
 };
 
 // const makeProducts = () => {
-// 	products.forEach((product => {
+// 	products.forEach((product) => {
 // 		console.log(product);
-// // 		dom(product);
-// 	}));
+// 		dom(product);
+// 	});
+// };
+
+// var getProducts = () => {
+// 	return products;
 // };
 
 
-module.exports = {initializer};
+module.exports = {initializer:initializer};
 
 
 
