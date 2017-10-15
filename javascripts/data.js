@@ -76,23 +76,6 @@ var productGetter = function() {
 
 
 
-
-// const productGetter = () => {
-// 	Promise.all([categoriesJSON(), typesJSON(), productsJSON()]).then(function(results) {
-// 		console.log("results from promise.all", results);
-// 		results.forEach((result) => {
-// 			result.forEach((products) => {
-// 				AllProducts.push(products);
-// 				console.log("result", result);
-// 			});
-// 		});
-// 		makeProducts();
-// 	});.catch((error) => {
-// 		console.log("error from Promise.all", error);
-// 	});
-// };
-
-
 const initializer = () => {
 	productGetter();
 };
