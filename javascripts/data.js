@@ -2,7 +2,9 @@
 
 const dom = require('./dom');
 
-const AllProducts = [];
+const products = [];
+const categories = [];
+const types = [];
 
 
 
@@ -37,16 +39,54 @@ const productsJSON = () => {
 	});	
 };
 
-const productGetter = () => {
-	Promise.all([categoriesJSON(), typesJSON(), productsJSON]).then(function(results) {
-		console.log("results from promise.all", results);
-		results.forEach((result) => {
-			result.forEach((products) => {
-				AllProducts.push(products);
-				console.log("result", result);
-			});
+
+// PROMISE _ CORRECT WAY
+var productGetter = function() {
+	categoriesJSON().then(function(results) {
+		results.forEach(function(result){
+			categories.push(result);
+		});	
+		return typesJSON();
+
+	}).then(function(results2) {
+		results2.forEach(function(type){
+			categories.forEach(function(category){
+				if(type.category === category.id) {
+					type.catName = category.name;
+				}
 		});
-// 		// makeProducts();
+
+		types.push(results2);
+		console.log(results2);
+	});
+		return productsJSON();
+
+	})
+	.then(function(results3) {
+		results3.forEach(function(product){
+			products.push(results3);
+		console.log("products", results3);
+
+	});	
+		// makeProducts();
+});
+};
+
+
+
+
+
+
+// const productGetter = () => {
+// 	Promise.all([categoriesJSON(), typesJSON(), productsJSON()]).then(function(results) {
+// 		console.log("results from promise.all", results);
+// 		results.forEach((result) => {
+// 			result.forEach((products) => {
+// 				AllProducts.push(products);
+// 				console.log("result", result);
+// 			});
+// 		});
+// 		makeProducts();
 // 	});.catch((error) => {
 // 		console.log("error from Promise.all", error);
 // 	});
@@ -57,6 +97,12 @@ const initializer = () => {
 	productGetter();
 };
 
+// const makeProducts = () => {
+// 	products.forEach((product => {
+// 		console.log(product);
+// // 		dom(product);
+// 	}));
+// };
 
 
 module.exports = {initializer};
