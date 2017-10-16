@@ -4,8 +4,9 @@ const data = require('./data');
 const dom = require('./dom');
 
 $('#workout').click((event) => {
-	dom.domString();
-		
+	// dom.domString();
+	console.log(event);
+		data.initializer(event);
 		
 
 });

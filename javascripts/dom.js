@@ -8,7 +8,7 @@ var outputDiv = $('#chosen');
 var domString = function (product) {
     var domStrang = '';
         domStrang += `<div>`;
-        domStrang +=    `<h1>${data.product.type.catName}</h1>`;
+        domStrang +=    `<h1>${data.products.type.catName}</h1>`;
         domStrang += `</div>`;
     printToDom(domStrang);
 };
@@ -18,4 +18,4 @@ var printToDom = function(strang) {
 };
 
 
-module.exports = domString;
+module.exports = {};

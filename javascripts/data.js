@@ -1,7 +1,7 @@
 "use strict";
 
 const dom = require('./dom');
-const events = require('./events');
+
 
 const products = [];
 const categories = [];
@@ -93,7 +93,7 @@ const initializer = function() {
 // };
 
 
-module.exports = {initializer:initializer};
+module.exports = {initializer};
 
 
 
