@@ -7,3 +7,5 @@ const events = require('./events');
 // $(document).ready(function () {
 // 	data.initializer();
 // });
+
+dom.test();

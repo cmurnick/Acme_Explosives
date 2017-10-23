@@ -64,8 +64,12 @@ var productGetter = function() {
 
 	}).then(function(results3) {
 		results3.forEach(function(product){
-			
-		
+			// console.log(product);
+			var dict = product;
+			for(var key in dict) {
+				console.log(key);
+				console.log(dict[key]);
+			}
 
 			
 
@@ -78,8 +82,9 @@ var productGetter = function() {
 			// }
 		});
 
-		products.push(results3);
-		console.log("products", results3);
+			products.push("hello");
+		// products.push(results3);
+		// console.log("products", results3);
 
 	});	
 		// makeProducts();
