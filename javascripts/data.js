@@ -64,6 +64,18 @@ var productGetter = function() {
 
 	}).then(function(results3) {
 		results3.forEach(function(product){
+			
+		
+
+			
+
+			// 
+			// }
+			// var products = {productName: product.name, type: product.type.name, catName: product.type.catName};
+			// console.log("products", products)
+			// Object.keys(products).forEach(function(key)){
+			// 	console.log(key + products(key));
+			// }
 		});
 
 		products.push(results3);
