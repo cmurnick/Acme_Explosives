@@ -8,4 +8,4 @@ const events = require('./events');
 // 	data.initializer();
 // });
 
-dom.test();
+// dom.test();

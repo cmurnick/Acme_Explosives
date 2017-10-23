@@ -58,7 +58,7 @@ var productGetter = function() {
 		});
 
 		types.push(results2);
-		console.log(results2);
+		// console.log(results2);
 	});
 		return productsJSON();
 
@@ -67,11 +67,12 @@ var productGetter = function() {
 			// console.log(product);
 			var dict = product;
 			for(var key in dict) {
-				console.log(key);
-				console.log(dict[key]);
+				// console.log(key);
+				products.push(dict[key]);
+
 			}
 
-			
+			console.log("These are the products", products);
 
 			// 
 			// }
@@ -84,7 +85,7 @@ var productGetter = function() {
 
 			products.push("hello");
 		// products.push(results3);
-		// console.log("products", results3);
+		console.log("products", results3);
 
 	});	
 		// makeProducts();
