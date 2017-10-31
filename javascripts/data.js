@@ -2,6 +2,7 @@
 
 const dom = require('./dom');
 
+
 const products = [];
 const categories = [];
 const types = [];
@@ -57,34 +58,56 @@ var productGetter = function() {
 		});
 
 		types.push(results2);
-		console.log(results2);
+		// console.log(results2);
 	});
 		return productsJSON();
 
-	})
-	.then(function(results3) {
+	}).then(function(results3) {
 		results3.forEach(function(product){
-			products.push(results3);
+			// console.log(product);
+			var dict = product;
+			for(var key in dict) {
+				// console.log(key);
+				products.push(dict[key]);
+
+			}
+
+			console.log("These are the products", products);
+
+			// 
+			// }
+			// var products = {productName: product.name, type: product.type.name, catName: product.type.catName};
+			// console.log("products", products)
+			// Object.keys(products).forEach(function(key)){
+			// 	console.log(key + products(key));
+			// }
+		});
+
+			products.push("hello");
+		// products.push(results3);
 		console.log("products", results3);
 
 	});	
 		// makeProducts();
-});
 };
 
 
 
 
 
-const initializer = () => {
+const initializer = function() {
 	productGetter();
 };
 
 // const makeProducts = () => {
-// 	products.forEach((product => {
+// 	products.forEach((product) => {
 // 		console.log(product);
-// // 		dom(product);
-// 	}));
+// 		dom(product);
+// 	});
+// };
+
+// var getProducts = () => {
+// 	return products;
 // };
 
 
